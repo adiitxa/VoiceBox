@@ -12,10 +12,12 @@ const app = express();
 connectDB();
 
 // CORS Configuration (similar to your working version)
+const allowedOrigins = process.env.CORS_ORIGIN?.split(',') || ['http://localhost:5173'];
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || 'http://localhost:5173',
+  origin: allowedOrigins,
   credentials: true
 }));
+
 
 // Middleware (same as your working version)
 app.use(express.json());

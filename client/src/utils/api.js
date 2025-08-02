@@ -1,9 +1,10 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8080/api',
-  withCredentials: true // required if backend expects cookies or auth
+  baseURL: 'https://voicebox-production.up.railway.app/api',
+  withCredentials: true
 });
+
 
 api.interceptors.request.use(
   (config) => {

@@ -9,7 +9,6 @@ import UploadEditEpisode from './pages/UploadEditEpisode';
 import EpisodeDetail from './pages/EpisodeDetail';
 import MyWishlist from './pages/MyWishlist';
 import PrivateRoute from './components/PrivateRoute';
-
 import CreatorRoute from './components/CreatorRoute'; // New component for creator-only routes
 
 function App() {

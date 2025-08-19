@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://voicebox-production.up.railway.app/api',
+  baseURL: 'https://voicebox.up.railway.app/api',
   withCredentials: true
 });
 
